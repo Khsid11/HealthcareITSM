@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare ITSM Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Healthcare Incident Dashboard</h1>
+        <nav>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="login-link">Login/Signup</a>
+            <a href="#" id="dashboard-link">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Our Healthcare Incident Management System</h2>
+            <p>Efficiently manage and track healthcare incidents to ensure prompt resolution and improved patient care. Our system provides an easy-to-use interface to report, track, and resolve incidents seamlessly.</p>
+            <p>Explore our system and see how it can enhance your incident management process.</p>
+            <!-- <a href="#" class="explore-btn">Explore</a> -->
+        </section>
+        <section id="login-section" class="section hidden">
+            <h2>Login/Signup</h2>
+            <form id="login-form" class="form">
+                <h3>Login</h3>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+                <p id="login-message" class="message hidden"></p>
+            </form>
+            <form id="signup-form" class="form hidden">
+                <h3>Signup</h3>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required>
+                <button type="submit">Signup</button>
+                <p id="signup-message" class="message hidden"></p>
+            </form>
+        </section>
+        <section id="dashboard-section" class="section hidden">
+            <div id="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Incidents Reported</h3>
+                    <p id="reported-incidents">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Resolved Incidents</h3>
+                    <p id="resolved-incidents">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending Incidents</h3>
+                    <p id="pending-incidents">0</p>
+                </div>
+            </div>
+            <section class="incident-form">
+                <h2>Create New Incident</h2>
+                <form id="create-incident-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                    <label for="description">Description:</label>
+                    <textarea id="description" required></textarea>
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="Network">Network</option>
+                        <option value="Patient Complaint">Patient Complaint</option>
+                        <option value="Server Issue">Server Issue</option>
+                        <option value="Database">Database</option>
+                        <option value="Security">Security</option>
+                    </select>
+                    <label for="priority">Priority:</label>
+                    <select id="priority">
+                        <option value="Critical">Critical</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section id="incidents-list">
+                <h2>Incident List</h2>
+                <div class="filters">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="">All</option>
+                        <option value="Network">Network</option>
+                        <option value="Patient Complaint">Patient Complaint</option>
+                        <option value="Server Issue">Server Issue</option>
+                        <option value="Database">Database</option>
+                        <option value="Security">Security</option>
+                    </select>
+                    <label for="priority-filter">Priority:</label>
+                    <select id="priority-filter">
+                        <option value="">All</option>
+                        <option value="Critical">Critical</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+                <div id="incidents"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Healthcare Inc.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
