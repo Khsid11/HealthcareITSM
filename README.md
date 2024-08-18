@@ -32,7 +32,7 @@ To run this project locally, follow these steps:
     - **Description**: Provides an introduction and a button to navigate to the login/signup page.
     - **Explore Button**: Click to go to the login/signup page.
 
-    ![Homepage](./HealthcareITSM/images/Screenshot(247).png)
+    ![Homepage](./images/Screenshot%20 (247).png)
 
 2. **Login/Signup Page**
     - **Description**: Allows users to log in or sign up.
