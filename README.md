@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
     - **Login Form**: Enter your username and password to access the dashboard.
     - **Signup Form**: Register a new account.
 
-    ![Login/Signup Page](./HealthcareITSM/images/Screenshot%20(248).png)
+    ![Login/Signup Page](.images/Screenshot%20(248).png)
 
 3. **Dashboard**
     - **Description**: Displays a summary of incidents and allows users to report new incidents.
